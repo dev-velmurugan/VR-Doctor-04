@@ -167,7 +167,7 @@ export default function ParticipantAssessmentSplit() {
 
           {renderTabContent()}
         </View>
-      </View>
+      </View>   
     </View>
   );
 }

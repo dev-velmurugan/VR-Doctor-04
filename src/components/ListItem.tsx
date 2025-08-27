@@ -62,7 +62,7 @@ export default function PatientCard({
             <Text className={`text-xs mt-1 ${selected ? 'text-white/90' : 'text-gray-500'}`}>
               {item.cancerType}{item.stage ? ` • Stage: ${item.stage}` : ''}
             </Text>
-          )}
+          )}  
         </View>
       </View>
 
