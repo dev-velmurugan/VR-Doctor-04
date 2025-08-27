@@ -40,18 +40,23 @@ export default function PatientCard({
     >
       <View className="flex-row items-center gap-3">
         {/* <FontAwesome name="user-md" size={20} color={iconColor} /> */}
-        <Image
-          source={require("../../assets/patient.png")}
-          style={{ width: 20, height: 20, tintColor: iconColor }} 
-        />
+       <Image
+  source={require("../../assets/patient.png")}
+  style={{
+    width: 20,
+    height: 20,
+    tintColor: selected ? '#ffffff' : iconColor,
+  }}
+/>
+
 
         <View>
           <Text className={`font-bold ${selected ? 'text-white' : 'text-[#0b1f1c]'}`}>
             {item.name}
           </Text>
-          <Text className={`text-xs ${selected ? 'text-white/90' : 'text-[#6b7a77]'}`}>
+          {/* <Text className={`text-xs ${selected ? 'text-white/90' : 'text-[#6b7a77]'}`}>
             {item.age} y • {item.weightKg} kg • {item.gender}
-          </Text>
+          </Text> */}
 
           {item.cancerType && (
             <Text className={`text-xs mt-1 ${selected ? 'text-white/90' : 'text-gray-500'}`}>
